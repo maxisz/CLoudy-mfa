@@ -1,6 +1,8 @@
 let name = window.prompt('hey whats your name?');
 let names = ['spodie', 'scavenger', 'NewBie'];
+let temperature = Math.floor(Math.random() * 36);
 
+document.getElementById('temp').innerHTML = `${temperature}C`;
 
 if (name == '') {
     name = names[Math.floor(Math.random() * 2)];
