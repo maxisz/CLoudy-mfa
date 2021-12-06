@@ -3,8 +3,8 @@ let names = ['spodie', 'scavenger', 'NewBie'];
 
 
 if (name == '') {
-    name = "Newbie";
-    window.alert('Dont worry Ill call you NewBie ');
+    name = names[Math.floor(Math.random() * 2)];
+    window.alert('Dont worry Ill call you  ' + name);
 }
 document.getElementById('header').innerHTML = `Welcome ${name}!`;
 
