@@ -1,6 +1,12 @@
-const name = window.prompt('hey whats your name?');
-document.getElementById('header').innerHTML = `Welcome ${name}`;
+let name = window.prompt('hey whats your name?');
+let names = ['spodie', 'scavenger', 'NewBie'];
 
+
+if (name == '') {
+    name = "Newbie";
+    window.alert('Dont worry Ill call you NewBie ');
+}
+document.getElementById('header').innerHTML = `Welcome ${name}!`;
 
 
 
